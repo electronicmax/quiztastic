@@ -3,11 +3,13 @@
       <li ng-repeat="q in questions" >
 	      <div ng-class="{ question: true, answered : q.response, correct:q.response && q.correct, incorrect:q.response && !q.correct }">
 	      	<h2>{{ q.question }}</h2>
-	      	<ol class="answers">
-	      		<li ng-repeat="ans in q.options" ng-click="answer(q,ans)">
-	      			{{ ans }}
-	      		</li>
-	      	</ol>
+	      	<div class="answers">
+		      	<ol>
+		      		<li ng-repeat="ans in q.options" ng-click="answer(q,ans)">
+		      			{{ ans }}
+		      		</li>
+		      	</ol>
+	        </div>
      		<div class="correct-answer-line" ng-show="q.response && !q.correct">
      			Correct Answer: <span class="answer" ng-bind="q.options[q.answer]"</span>
 	  		</div>

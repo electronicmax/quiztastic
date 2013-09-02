@@ -4,7 +4,17 @@
 }
 
 div.quiztastic {
+	padding:0px; margin:0px;
 	ul { list-style-type: none; }
+	* { 
+	    -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	    -o-transition: all 1s ease-in-out;
+	    -webkit-transition: all 1s ease-in-out;
+	    transition: all 1s;
+	}
+
+
 	.question {
 		overflow:hidden;
 		h2 { margin:0px; padding:0px; }
@@ -12,6 +22,8 @@ div.quiztastic {
 		padding:32px;
 		margin:12px;
 		.answers {
+			overflow:hidden;
+			max-height:1000px;
 			li {
 				&:hover { font-weight:bold; }
 			}
@@ -20,15 +32,17 @@ div.quiztastic {
 		&.answered {
 			.answers {
 				opacity:0.2;
-				height:0px;
+				max-height:0px;
 			}
 			.explanation { 
 				visibility:visible;
-				height:50px;
 			}
 		}
-		&.correct { .explanation { color: green; }} 
-		&.incorrect { .explanation { color: red; }}
+		&.correct { .explanation, .correct-answer-line { color: green; } }
+		&.incorrect { .explanation, .correct-answer-line { color: red; } }
+		
+		// &.correct { .explanation { color: green; }} 
+		// &.incorrect { .explanation { color: red; }}
 	}
 
 }
