@@ -6,7 +6,16 @@
 				"9", "19", "20", "21", "25"
 			],
 			"answer":2,
-			"explanation":"Ed might look and act young but he''s actually 20"
+			"explanation":"Ed might look and act young but he's actually 20"
+		},
+		{
+			"question":"How old is Ed?",
+			"options":[
+				"9", "19", "20", "21", "25"
+			],
+			"answer":2,
+			"explanation":"Ed might look and act young but he's actually 20"
 		}
+
 	]
 }

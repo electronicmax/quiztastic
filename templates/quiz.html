@@ -2,7 +2,7 @@
    <ul>
       <li ng-repeat="q in questions" >
 	      <div ng-class="{ question: true, answered : q.response, correct:q.response && q.correct, incorrect:q.response && !q.correct }">
-	      	<h2>{{ q.question }}</h2>
+	      	<div class="title">{{ q.question }}</div>
 	      	<div class="answers">
 		      	<ol>
 		      		<li ng-repeat="ans in q.options" ng-click="answer(q,ans)">
@@ -11,7 +11,7 @@
 		      	</ol>
 	        </div>
      		<div class="correct-answer-line" ng-show="q.response && !q.correct">
-     			Correct Answer: <span class="answer" ng-bind="q.options[q.answer]"</span>
+     			Sorry, the correct answer is: <span class="answer" ng-bind="q.options[q.answer]"</span>
 	  		</div>
 	      	<div class="explanation" ng-bind="q.explanation"></div>
 	      </div>

@@ -5,7 +5,7 @@
 
 div.quiztastic {
 	padding:0px; margin:0px;
-	ul { list-style-type: none; }
+	ul { list-style-type: none; padding:0px; margin:0px;}
 	* { 
 	    -moz-transition: all 1s ease-in-out;
 	    -ms-transition: all 1s ease-in-out;
@@ -13,13 +13,11 @@ div.quiztastic {
 	    -webkit-transition: all 1s ease-in-out;
 	    transition: all 1s;
 	}
-
-
 	.question {
+		.title { padding-bottom:0.2em; font-size:18pt; }
 		overflow:hidden;
-		h2 { margin:0px; padding:0px; }
 		border:1px solid #eee;
-		padding:32px;
+		padding:16px;
 		margin:12px;
 		.answers {
 			overflow:hidden;
