@@ -1,20 +1,20 @@
 { 
 	"questions":[
 		{
-			"question":"How old is Ed?",
+			"question":"Which one is a planet?",
 			"options":[
-				"9", "19", "20", "21", "25"
+				"Africa", "The Moon", "The Sun", "Pluto", "Mars"
 			],
-			"answer":2,
-			"explanation":"Ed might look and act young but he's actually 20"
+			"answer":4,
+			"explanation":"Pluto used to be a planet, but it's now a planetoid. The rest are just wrong."
 		},
 		{
-			"question":"How old is Ed?",
+			"question":"Who created this program?",
 			"options":[
-				"9", "19", "20", "21", "25"
+				"Adam", "eMax", "James", "Ed", "Hugh"
 			],
-			"answer":2,
-			"explanation":"Ed might look and act young but he's actually 20"
+			"answer":1,
+			"explanation":"eMax is definitely the only one perverse enough to use AngularJS."
 		}
 
 	]
