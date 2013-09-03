@@ -15,12 +15,9 @@ angular.module('quiztastic', ['ui'])
 					q.response = a;
 					if (correct_answer(q,a)) {
 						console.log('answer is correct', a);
-						q.response = a; 
 						q.correct = true; 
 						q.explanation = a + " is correct!";
-					} else { 
-					}
-					console.log('question response is now ', q.response);
+					} 
 				};
 				$.get(url).then(function(data) {
 					try {

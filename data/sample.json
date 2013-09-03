@@ -11,7 +11,7 @@
 		{
 			"question":"Who created this program?",
 			"options":[
-				"Adam", "eMax", "James", "Ed", "Hugh"
+				"Adam", "eMax", "James", "Ed", "Hugh", "Peter", "Neal"
 			],
 			"answer":1,
 			"explanation":"eMax is definitely the only one perverse enough to use AngularJS."
