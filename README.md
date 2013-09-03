@@ -15,8 +15,11 @@ An example JSON quiz spec might look like:
       ]
     }
 
-
 It creates an interactive quiz that simply shows whether the person is correct or wrong.
 CSS transforms are used and since this uses AngularJS you probably want a modern browser.
 
 <3 eMax
+
+Released under the MIT License. 
+Created by @emax with love.
+
